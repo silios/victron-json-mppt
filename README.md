@@ -10,6 +10,7 @@ Both scripts run on startup on the CCGX https://www.victronenergy.com/live/ccgx:
 
 example rc.local:
 ```su root -c "screen -dm -S epever-dbus ~/dbus-service.py"```
+```su root -c "screen -dm -S epever-dbus ~/dbus-values.py"```
 
 
 ## Why?
