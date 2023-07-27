@@ -56,12 +56,14 @@ except:
 try:
     dbusservice.add_path('/State', 0, writeable=True)
     dbusservice.add_path('/Pv/V', 0, writeable=True)
-    dbusservice.add_path('/Pv/I', 0, writeable=True)
+    #dbusservice.add_path('/Pv/I', 0, writeable=True) # deprecated per v2.80
+    dbusservice.add_path('/Pv/P', 0, writeable=True)
     dbusservice.add_path('/Dc/0/Voltage', 0, writeable=True)
     dbusservice.add_path('/Dc/0/Current', 0, writeable=True)
     # dbusservice.add_path('/DC/0/Power', 0, writeable=True)
     dbusservice.add_path('/Load/State', 0, writeable=True)
     dbusservice.add_path('/Load/I', 0, writeable=True)
+    dbusservice.add_path('/NrOfTrackers', 0, writeable=True)
     dbusservice.add_path('/ErrorCode', 0, writeable=True)
     dbusservice.add_path('/Yield/Power', 0, writeable=True)  # Actual input power (Watts)
     dbusservice.add_path('/Yield/User', 0, writeable=True)  # Total kWh produced (user resettable)
