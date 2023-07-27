@@ -1,7 +1,7 @@
 # victron-json-mppt
 Python DBUS json mppt solar charger scripts for VenusOS from https://github.com/ganey/victron-json-mppt
 
-### Tested on RPi 4 Runing latest Venus OS 
+### Tested on RPi 4 CCGX With python 3 and Venus_OS 3.10
 Publishes an MPPT solarcharger on the DBUS based on the dbus definitions here: https://github.com/victronenergy/venus/wiki/dbus#solar-chargers
 
 Both scripts run on startup on the CCGX https://www.victronenergy.com/live/ccgx:root_access#hooks_to_install_run_own_code_at_boot.
