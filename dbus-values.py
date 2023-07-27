@@ -17,15 +17,16 @@ sys.path.insert(1, os.path.join(os.path.dirname(__file__), './ext/velib_python')
 
 # default start values
 values = {
-    '/State': '2',  # fault
+    '/State': '0',  # fault
     '/Connected': 0,
     '/Pv/V': 0,
-    '/Pv/I': 0,
+    #'/Pv/I': 0,  #deprecated per v2.80:
+    '/Pv/P': 0,
     '/Dc/0/Voltage': 0,
     '/Dc/0/Current': 0,
     '/Yield/Power': 0,
-    '/Yield/User': 129,
-    '/Yield/System': 129,
+    #'/Yield/User': 0,
+    #'/Yield/System': 0,
 }
 
 
